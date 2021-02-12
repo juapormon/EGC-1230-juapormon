@@ -2,6 +2,6 @@
 - name: Create decide user
   become: true
   user:
-    name: decide
+    name: practica
     comment: Decide app user
     state: present

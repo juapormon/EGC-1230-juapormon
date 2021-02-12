@@ -1,7 +1,7 @@
 ---
 - name: Git clone
   become: yes
-  become_user: decide
+  become_user: practica
   git:
     repo: 'https://github.com/wadobo/decide.git'
     dest: /home/decide/decide
@@ -9,7 +9,7 @@
 
 - name: Python virtualenv
   become: yes
-  become_user: decide
+  become_user: practica
   pip:
     name: "gunicorn"
     virtualenv: /home/decide/venv
@@ -17,7 +17,7 @@
 
 - name: Requirements
   become: yes
-  become_user: decide
+  become_user: practica
   pip:
     requirements: /home/decide/decide/requirements.txt
     virtualenv: /home/decide/venv
