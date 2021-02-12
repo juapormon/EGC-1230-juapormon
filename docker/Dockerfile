@@ -10,7 +10,7 @@ RUN pip install ipython
 
 WORKDIR /app
 
-RUN git clone https://github.com/wadobo/decide.git .
+RUN git clone -b master https://github.com/juapormon/dp1-2020-g3-18 .
 RUN pip install -r requirements.txt
 
 WORKDIR /app/decide
